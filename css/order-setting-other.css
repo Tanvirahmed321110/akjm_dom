@@ -1,0 +1,493 @@
+
+
+
+section p,section a{
+    font-size: var(--sm-font);
+    font-weight: 500;
+}
+section label{
+    color: var(--gray-color);
+    font-weight: 500;
+}
+
+.order-area{
+    display: flex;
+    gap: 25px;
+}
+.order-area .order-sidebar{
+    min-width: 250px;
+    border-right: 1px solid var(--border-color);
+    /* height: 555px; */
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+/* order-sidebar item */
+.order-sidebar .order-sidebar-item{
+    padding: 10px;
+    width: 100%;
+    border-radius: var(--radius-md);
+}
+.order-sidebar .order-sidebar-item:hover {
+    background-color: var(--white-medium);
+}
+.order-sidebar .order-sidebar-item a{
+    font-size: var(--md-font);
+    font-weight: 500;
+    color:var(--gray-color)
+}
+.order-sidebar .order-sidebar-item.active{
+    background-color: var(--heading-color);
+    color:var(--white-color);
+}
+.order-sidebar .order-sidebar-item.active a{
+    color:var(--white-color);
+}
+
+/* order-sidebar-item-hr */
+.order-sidebar-item-hr{
+    margin: 15px 0 5px 0;
+    background-color: var(--border-color);
+    height: 1px;
+    width:100%
+}
+
+
+
+
+
+
+/* ==========  order items  ========== */
+.order-items-area{
+    padding: 50px;
+    flex-grow: 1;
+    overflow-x: scroll;
+}
+.orders-items-inner table{
+    border-collapse: collapse;
+    overflow-x: scroll;
+}
+.orders-items-inner table thead th{
+    padding: 12px 25px;
+    background-color: var(--white-medium);
+    text-align: left;
+    color: var(--gray-color);
+    border-bottom:var(--border-1);
+}
+
+.orders-items-inner table td{
+    padding: 14px 25px;
+    text-wrap: nowrap;
+    font-weight: 500;
+    border-bottom:var(--border-1);
+}
+
+/*  order image */
+.orders-items-inner table img{
+    width: 75px;
+    height: 60px;
+}
+.orders-items-inner .order-td{
+    font-size: var(--sm-font);
+}
+.orders-items-inner .order-td,.orders-items-inner .item-name{
+    color: var(--heading-color);
+    font-weight: 500;
+    font-size: var(--sm-font);
+}
+.item-name {
+    margin-bottom: 5px;
+}
+
+/* process and complete */
+.process ,.complete{
+    padding:3px 5px;
+    border-radius: var(--radius-sm);
+    color: var(--white-color);
+    font-size: var(--low-font);
+    display: inline-block;
+}
+.process{
+    background-color: var(--yellow-color);
+}
+.complete{
+    background-color: var(--green-color);
+}
+
+/* eye icon */
+.eye-icon{
+    color: var(--gray-color);
+    font-size: var(--lg-font);
+}
+.orders-items-inner a:hover{
+    color: var(--link-color);
+}
+
+
+
+/* =============== setting page style here ================= */
+.btn-fill-orange:hover{
+    color: var(--white-color) !important;
+}
+.order-items-area.setting-items{
+    overflow:visible;
+}
+
+.setting-right-item .lg-title{
+    font-weight: 500;
+}
+
+
+.setting-right-items input{
+    width:300px;
+}
+.setting-right-item{
+    padding-bottom: 50px;
+}
+.setting-right-item.setting-item-password{
+    padding-top: 50px ;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+.setting-right-item.delete-account{
+    padding-top: 50px;
+}
+.setting-right-item:last-child{
+    padding-bottom: 0;
+}
+
+a.reset-password:hover{
+    color: var(--link-hover-color);
+}
+
+
+/* delete account item */
+.setting-right-item.delete-account .btn-outline,.outline-sub-btn{
+    border: 1px solid var(--link-hover-color);
+    color: var(--link-hover-color);
+    font-weight: 500;
+    transition: .2s;
+}
+.setting-right-item.delete-account .btn-outline:hover{
+    background-color: var(--green-color);
+    color: var(--white-color);
+}
+
+
+
+
+/* ============== address page style here =============== */
+.address-area-header .btn-outline:hover{
+    background-color: var(--link-color);
+    border:1px solid transparent;
+    color: var(--white-color);
+}
+.address-items{
+    max-width: 600px;
+    width: 100%;
+}
+.address-items .address-item{
+    padding: 20px;
+    border: var(--border-1);
+    border-radius: var(--radius-md);
+}
+.address-item .default-address-btn{
+    padding: 5px 10px;
+    background-color:blueviolet;
+    color: var(--white-color);
+    font-size: var(--xs-font);
+}
+.address-item .edit{
+    color: var(--heading-color);
+}
+
+
+
+/* ============== payment page style here =============== */
+.orders-items-inner.flex-column-20{
+    gap: 40px;
+}
+.payment-items .cart-item{
+    padding: 15px 0;
+    border-top:var(--border-1);
+}
+.payment-items .cart-item img{
+    width: 50px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    /* border: var(--border-1); */
+}
+
+.payment-items .cart-item p{
+    color: var(--heading-color);
+}
+.payment-items .cart-item .expair{
+    background-color: var(--yellow-color);
+    display: inline-block;
+    padding: 2px 3px;
+    border-radius: var(--radius-sm);
+    font-size: 11px;
+}
+/* remove-cart */
+.remove-cart .btn-outline{
+    padding: 9px 15px;
+    color: var(--gray-color);
+    border: var(--border-1);
+    transition: .2s;
+    font-weight: 500;
+}
+.remove-cart .btn-outline:hover{
+    background-color: var(--white-medium);
+    color: var(--gray-color);
+}
+
+/*  btn disable */
+.btn-outline.disable-btn{
+    cursor: auto;
+    color: var(--gray-medium);
+}
+.btn-outline.disable-btn:hover{
+    background-color: var(--white-color);
+    color: var(--gray-medium);
+}
+
+
+
+/* ========== notification page ============ */
+.notification-items.flex-column-25{
+    gap: 40px;
+}
+.notification-item .flex-between{ 
+    gap: 50px;
+}
+.notification-item .sm-title{
+    font-weight: 500;
+    font-size: var(--sm-font);
+}
+
+/* notification-item-header */
+.notification-item-header{
+    padding: 10px 0;
+    border-bottom: var(--border-1);
+    width: 100%;
+}
+
+
+
+
+
+/* ========== switch on of style ========= */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 7px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+input:checked + .slider {
+    background-color: var(--link-color);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+input:checked + .slider:before {
+    /* -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px); */
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  
+  
+  /* mobile-menu-order-sidebar */
+  .mobile-menu-sidebar-header{
+    display: none;
+  }
+  .second-sidebar{
+    position: absolute;
+        max-width: 450px;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        height: 100dvh;
+        padding: 25px;
+        background-color: var(--white-color);
+        box-shadow: var(--box-shadow);
+        z-index: 2;
+        transition: .3s linear;
+        visibility: hidden;
+  }
+  
+  
+  @media screen and (max-width: 991px) {
+    /* ============= order page ============== */
+    .order-area {
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        max-width: 730px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .order-items-area {
+        padding: 10px;
+    }
+    .order-area .order-sidebar {
+        min-width: 220px;
+        padding-right: 10px;
+    }
+    .orders-items-inner table img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    /* ============ setting page =========== */
+    .setting-right-item input{
+        width: 100%;
+    }
+    .pass.flex-start-20{
+        flex-direction: column;
+    }
+    
+    /* ============= address page =============== */
+    /* .address-items.flex-start-20 {
+        flex-direction: column;
+        background-color: orange;
+        width: 100%;
+    } */
+    .orders-items-inner.flex-column-20{
+        width: 100%;
+    }
+    .address-items.flex-start-20{
+        flex-direction: column;
+    }
+    .address-item{
+        width: 100%;
+    }
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 769px) {
+    
+    /* =========== payment page ============ */
+    /* header in sidebar */
+    .second-sidebar-area .text-right{
+        margin-bottom: 5px;
+    }
+    .mobile-menu-sidebar-header{
+        display: flex;
+        padding: 15px 0px;
+        max-width: 540px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .menu-sidebar-second-btn{
+        border: var(--border-1);
+        font-size: var(--xl-font);
+        padding:3px 5px;
+        cursor: pointer;
+    }
+    .order-sidebar{
+        display: none;
+    }
+    .orders-items-inner.flex-column-20 {
+        padding: 0px 0px;
+        max-width: 540px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .order-items-area {
+        padding: 0px;
+    }
+    .orders-items-inner{
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    
+    /* second-sidebar */
+    /* .second-sidebar{
+        position: absolute;
+        max-width: 450px;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        height: 100dvh;
+        padding: 25px;
+        background-color: var(--white-color);
+        box-shadow: var(--box-shadow);
+        z-index: 2;
+        transition: 2s linear;
+        visibility: hidden;
+        opacity: 0;
+    } */
+    .second-sidebar.active{
+        visibility: visible;
+        transition: .3s linear;
+        z-index: 3;
+        left: 0;
+    }
+    /* order-sidebar item */
+    .second-sidebar .order-sidebar-item{
+        padding: 10px;
+        width: 100%;
+        border-radius: var(--radius-md);
+    }
+    .second-sidebar .order-sidebar-item:hover {
+        background-color: var(--white-medium);
+    }
+    .second-sidebar .order-sidebar-item a{
+        font-size: var(--md-font);
+        font-weight: 500;
+        color:var(--gray-color)
+    }
+    .second-sidebar .order-sidebar-item.active{
+        background-color: var(--black-color);
+    }
+    .second-sidebar .order-sidebar-item.active a{
+        color: var(--white-color);
+        font-weight: 400;
+    }
+  }

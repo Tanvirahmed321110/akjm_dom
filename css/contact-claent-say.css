@@ -1,0 +1,164 @@
+
+/* =============== client say area  start here ================= */
+
+.clients-say-items.col-3{
+    align-items: stretch;
+    gap: 50px;
+}
+.client-say-item{
+    text-align: center;
+    padding: 25px;
+    box-shadow: var(--box-shadow);
+    border-radius: 12px;
+}
+
+/* client say header part  */
+.client-say-item .client-image{
+    width: 120px;
+    height: 120px;
+}
+.client-say-item .client-image img {
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.client-say-item .client-imag-name h5{
+    font-size: var(--lg-font);
+    position: relative;
+    padding-bottom: 10px;
+}
+.client-say-item .client-imag-name h5::after{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50px;
+    height: 17px;
+    width: 20px;
+    background:var(--gray-medium);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
+/*  client say item body  */
+.client-say-item-body-data h5{
+    font-size: var(--md-font);
+}
+
+.client-say-item-body{
+    border:1px solid var(--white-medium);
+}
+.client-say-item-body-data{
+    padding: 10px;
+}
+.client-say-item-body-data small,.client-say-item-body-data p{
+    display:block;
+    text-align: left ;
+}
+.client-say-item-body-data.flex-column-20{
+    align-items: flex-start;
+}
+
+
+/*  client say item footer  */
+.client-say-item-footer{
+    background-color: var(--grey-color);
+    padding: 10px ;
+    width: 100%;
+}
+.client-say-item-footer ul.flex-start{
+    gap: 20px;
+}
+.client-say-item-footer ul li i{
+    color: var(--gray-color);
+    font-size: var(--lg-font);
+}
+.client-say-item-footer ul li a{
+    transition: .4s linear;
+}
+.client-say-item-footer ul li a:hover  {
+    color: var(--link-hover-color);
+    transition: .4s linear;
+    transform: rotate(360deg) ;
+}
+
+
+
+/* =============== contact-form-area  start here ================= */
+.contact-address-content-area{
+    padding: 25px 0;
+}
+.contact-address{
+    background-color: var(--navy-color);
+    padding: 25px 0;
+    margin-top: 80px;
+}
+.contact-address-items{
+    background-color: var(--white-medium);
+    margin-top: -170px;
+}
+.contact-address-items.d-flex-15{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 35px;
+    row-gap: 50px;
+}
+.contact-address-item{
+    margin-top: -40px;
+    padding-bottom: 40px;
+}
+.contact-addres-item-icon{
+    background-color: var(--navy-color);
+    padding: 11px;
+    border-radius: 50%;
+}
+.contact-addres-item-icon img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.contact-address-item-data{
+    text-align: center;
+}
+.contact-address-item-data h5{
+    font-size: var(--md-font);
+    word-spacing: 5px;
+    letter-spacing: .4px;
+    color: var(--grey-color);
+}
+.contact-address-item-data P{
+    font-weight: 500;
+    font-size: var(--xs-font);
+    color: var(--grey-color);
+}
+
+
+
+
+/******************
+*** Responsive ****
+******************* */
+@media screen and (max-width:991px){
+    
+    .clients-say-items.col-3{
+        gap: 20px;
+      }
+}
+@media screen and (max-width:769px){
+    .client-say-header.section-header-gap{
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .client-say-item{
+        max-width: 500px;
+    }
+    .freshShop-app-content.flex-column-25{
+        /* align-items: center; */
+        justify-content: center;
+    }
+    .freshShop-app-content{
+        max-width: 500px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}

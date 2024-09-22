@@ -1,0 +1,160 @@
+/* ============= Login page start here ============== */
+header{
+    box-shadow: 1px 3px 5px rgba(104, 105, 103, 0.2);
+    border-bottom:var(--border-1);
+}
+header,main{
+    letter-spacing: .2px;
+}
+main{
+    padding: 100px 0;
+}
+main a{
+    font-size: var(--sm-font);
+    font-weight: 500;
+}
+main p{
+    font-weight: 500;
+}
+main input{
+    font-weight: 500;
+}
+main a:hover{
+    color:var(--link-hover-color);
+}
+.btn-fill-orange:hover{
+    color: var(--white-color);
+}
+
+
+
+/* ======== header area ========== */
+.header-area{
+    padding: 15px 0;
+}
+.header-area p,.header-area a{
+    font-weight: 500;
+}
+.header-right .d-flex-5 a{
+    line-height: 22px;
+    font-size: var(--sm-font);
+}
+.header-right .d-flex-5 a:hover{
+    color: var(--link-hover-color);
+}
+.header-right .d-flex-5 {
+    height: 30px;
+}
+.header-area i{
+    color: var(--link-color);
+}
+
+
+
+.login-area.flex-between{
+    gap: 80px;
+}
+
+
+
+/*========= login-image =======*/
+.login-image{
+
+}
+.login-image img{
+    width: 100%;
+    height: 250px;
+}
+
+/*========= login-content ===========*/
+.login-content{
+    max-width: 370px;
+}
+.login-content.flex-column-25{
+    gap: 35px;
+}
+.login-content .d-flex-5 a{
+    display: block;
+    line-height: 22px;
+}
+
+
+
+
+/* ========== register page  ============= */
+.condition a{
+    display: inline;
+    font-size: var(--low-font);
+}
+
+
+.register-image img{
+    border-radius: 25px;
+    height: 300px;
+    width: 100%;
+    padding: 5px;
+    object-fit: cover;
+}
+
+
+
+/* forgot password page */
+.forgot-area.flex-between{
+    justify-content: center;
+    gap: 100px;
+}
+.forgot-area .forgotImage img{
+    height: 310px;
+}
+/* back-btn */
+.back-btn{
+    background-color: var(--white-medium);
+    color: var(--heading-color);
+}
+.back-btn:hover{
+    background-color: var(--gray-medium);
+}
+
+
+
+
+
+/************************
+***  Responsive Part  ***
+*************************/
+@media screen and (max-width:991px){
+    
+    /*======== forgot password =========*/
+    .header-area.flex-between{
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width:769px){
+    
+    /*========= forgot page ==========*/
+    .forgot-area.flex-between{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    main{
+        padding: 40px 0;
+    }
+    .login-content.flex-column-25{
+        gap: 25px;
+    }
+    /*======== login page =========*/
+    .login-area.flex-between{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    
+}
+
+@media screen and (max-width:480px){
+    .header-area.flex-between{
+        flex-direction: column;
+    }
+}
